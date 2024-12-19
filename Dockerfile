@@ -104,6 +104,7 @@ RUN	apk --no-cache --update add \
 	bash \
 	nftables \
 	jq \
+	php84-sockets \
 	&& ln -sf /usr/bin/$PHP_VER /usr/bin/php \
 	&& docker-service.sh \
 	"syslogd -nO- -l$SYSLOG_LEVEL $SYSLOG_OPTIONS" \
